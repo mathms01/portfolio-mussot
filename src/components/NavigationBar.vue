@@ -1,20 +1,11 @@
 <template>
-<div>
-  <b-navbar toggleable="lg" type="dark" variant="info">
-    <b-navbar-brand href="#">NavBar</b-navbar-brand>
-
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
-    <b-collapse id="nav-collapse" is-nav>
-      <b-navbar-nav>
-        <b-nav-item href="#">Home</b-nav-item>
-        <b-nav-item href="#">CV</b-nav-item>
-        <b-nav-item href="#">Portfolio</b-nav-item>
-        <b-nav-item href="#">About</b-nav-item>
-      </b-navbar-nav>
-    </b-collapse>
-  </b-navbar>
-</div>
+  <div id="nav">
+    <router-link to="/home">Home</router-link>
+    <router-link to="/cv">CV</router-link>
+    <router-link to="/portfolio">Portfolio</router-link>
+    <router-link to="/about">About</router-link>
+  </div>
+  <router-view/>
 </template>
 
 <script>

@@ -1,14 +1,23 @@
 <template>
-    <div class="hello">
-        <h1>{{ msg }}</h1>
+    <div>
+      <li v-for="item in items"
+      :key=item.title>
+          {{ item.title }} - {{ item.description }}
+      </li>
     </div>
 </template>
 
 <script>
+import projects from '@/assets/projects.json';
+
 export default {
   name: 'ListProjects',
   props: {
-    msg: String
+  },
+  data () {
+    return {
+      items: projects
+    }
   }
 }
 </script>

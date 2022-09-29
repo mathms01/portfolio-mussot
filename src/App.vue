@@ -1,15 +1,14 @@
 <template>
-  <h1>Portofolio</h1>
-  <ListProjects msg="Projects"/>
+  <NavigationBar/>
 </template>
 
 <script>
-import ListProjects from '../../components/ListProjects.vue'
+import NavigationBar from '@/components/NavigationBar.vue'
 
 export default {
   name: 'App',
   components: {
-    ListProjects
+    NavigationBar,
   }
 }
 </script>

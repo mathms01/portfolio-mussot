@@ -1,18 +1,12 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-  <ListProjects msg="Projects"/>
+<h1>CV</h1>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import ListProjects from './components/ListProjects.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    ListProjects
   }
 }
 </script>
