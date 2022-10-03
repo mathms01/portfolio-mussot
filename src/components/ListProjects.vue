@@ -2,7 +2,8 @@
     <div>
       <li v-for="item in items"
       :key=item.title>
-          {{ item.title }} - {{ item.description }}
+        <img class="frame" src="item.image" />
+          {{ item.title }} - {{ item.description }} - {{ item.link }} - {{ item.image }}
       </li>
     </div>
 </template>
@@ -23,5 +24,10 @@ export default {
 </script>
 
 <style>
-
+.frame {
+  border: 3px solid #2c3e50;
+  background: #eee;
+  margin: auto;
+  padding: 15px 25px;
+}
 </style>

@@ -3,6 +3,7 @@
     <router-link to="/home">Home</router-link>
     <router-link to="/cv">CV</router-link>
     <router-link to="/portfolio">Portfolio</router-link>
+    <router-link to="/freelance">Freelance</router-link>
     <router-link to="/about">About</router-link>
   </div>
   <router-view/>

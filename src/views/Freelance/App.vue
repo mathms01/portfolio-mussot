@@ -1,5 +1,5 @@
 <template>
-<h1>About</h1>
+<h1>Freelance</h1>
 </template>
 
 <script>

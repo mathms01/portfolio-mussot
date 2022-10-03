@@ -3,6 +3,7 @@ import Home from '@/views/Home/App.vue'
 import Portfolio from '@/views/Portfolio/App.vue';
 import CV from '@/views/CV/App.vue';
 import About from '@/views/About/App.vue';
+import Freelance from '@/views/Freelance/App.vue';
 
 const routes = [
     {
@@ -19,6 +20,11 @@ const routes = [
         name:'CV',
         path: '/cv',
         component: CV
+    },
+    {
+        name:'Freelance',
+        path: '/freelance',
+        component: Freelance
     },
     {
         name:'About',
