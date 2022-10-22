@@ -1,0 +1,21 @@
+[
+    {
+    "title": "Météo app",
+    "image": "./assets/img-portfolio/meteoIMG.png",
+    "description": "Une application météo & news codé en Java",
+    "link": "https://github.com/mathms01/MeteoApp"
+    },
+    {
+    "title": "Calculatrice app",
+    "image": "./assets/img-portfolio/calcuLAIDE.png",
+    "description": "Une application de calculatrice pas très belle mais fonctionnelle, codé en C#",
+    "link": "https://github.com/mathms01/CalculatriceApp"
+    },
+    {
+    "title": "Password manager",
+    "image": "./assets/img-portfolio/PassWord-Manager.png",
+    "description": "Une application de gestion de mot de passe, codé en C#",
+    "link": "https://github.com/mathms01/PasswordManager"
+    }
+]
+  

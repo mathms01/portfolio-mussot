@@ -1,15 +1,21 @@
 <template>
-<h1>About</h1>
-<ContactUs></ContactUs>
+<h1>Qualifications</h1>
+<h2>Degrees</h2>
+<ListDegrees></ListDegrees>
+<h2>Certifications</h2>
+<ListCertifications></ListCertifications>
 </template>
 
 <script>
-import ContactUs from '@/components/ContactUs.vue';
+
+import ListDegrees from "@/components/ListDegrees.vue";
+import ListCertifications from "@/components/ListCertifications.vue";
 
 export default {
   name: 'App',
   components: {
-    ContactUs,
+    ListDegrees,
+    ListCertifications
   }
 }
 </script>

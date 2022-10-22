@@ -1,0 +1,27 @@
+[
+    {
+    "title": "IUT Informatique Lyon1",
+    "image": "./assets/img-portfolio/meteoIMG.png",
+    "city": "Bourg-en-Bresse",
+    "level": "Bac+2",
+    "description": "Analyste Développeur Informatique",
+    "link": "https://iut.univ-lyon1.fr/formation/offre-de-formations/informatique-bourg-en-bresse"
+    },
+    {
+        "title": "LP Devops Lyon1",
+        "image": "./assets/img-portfolio/meteoIMG.png",
+        "city": "Lyon",
+        "level": "Bac+3",
+        "description": "Développeur d'application d'entreprise, administrateur de systèmes d'information (DEVOPS)",
+        "link": "https://iut.univ-lyon1.fr/formation/offre-de-formations/informatique-villeurbanne-doua/licence-professionnelle-metiers-de-linformatique-conception-developpement-et-test-de-logiciels-parcours-developpeur-dapplication-dentreprise-administrateur-de-systemes-dinformation-devops"
+    },
+    {
+        "title": "Chef de projet ingénierie logicielle IPI",
+        "image": "./assets/img-portfolio/meteoIMG.png",
+        "city": "Lyon",
+        "level": "Bac+5",
+        "description": "Test",
+        "link": "https://www.ipi-ecoles.com/chef-de-projet-ingenierie-logicielle/"
+    }
+]
+  

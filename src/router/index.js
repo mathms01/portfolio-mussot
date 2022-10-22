@@ -4,6 +4,7 @@ import Portfolio from '@/views/Portfolio/App.vue';
 import CV from '@/views/CV/App.vue';
 import About from '@/views/About/App.vue';
 import Freelance from '@/views/Freelance/App.vue';
+import Qualifications from '@/views/Qualifications/App.vue';
 
 const routes = [
     {
@@ -25,6 +26,11 @@ const routes = [
         name:'Freelance',
         path: '/freelance',
         component: Freelance
+    },
+    {
+        name:'Qualifications',
+        path: '/qualifications',
+        component: Qualifications
     },
     {
         name:'About',
