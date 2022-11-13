@@ -1,15 +1,18 @@
 <template>
     <div>
-      <li v-for="item in items"
+      <span class="container" v-for="item in items"
       :key=item.title>
-        <img class="frame" src="item.image" />
-          {{ item.title }} - {{ item.description }} - {{ item.link }} - {{ item.image }}
-      </li>
+        <img class="frame" :src=getImagePath(item.image) href="#" v-bind:title="item.title"/>
+        <div class="center">
+          {{ item.title }} {{ item.description }} {{ item.link }} 
+        </div>
+    </span>
     </div>
 </template>
 
 <script>
 import projects from '@/assets/projects.json';
+import shared from '@/utilities/shared.js';
 
 export default {
   name: 'ListProjects',
@@ -19,15 +22,33 @@ export default {
     return {
       items: projects
     }
+  },
+  methods :{
+    getImagePath(img) {
+    return shared.getImagePath(img)
+    }
   }
 }
 </script>
 
 <style>
 .frame {
-  border: 3px solid #2c3e50;
-  background: #eee;
   margin: auto;
   padding: 15px 25px;
+  max-width: 400px;
+  max-height: 300px;
+}
+
+.container{
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 </style>

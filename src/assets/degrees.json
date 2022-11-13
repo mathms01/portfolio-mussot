@@ -1,7 +1,7 @@
 [
     {
     "title": "IUT Informatique Lyon1",
-    "image": "./assets/img-portfolio/meteoIMG.png",
+    "image": "meteoIMG.png",
     "city": "Bourg-en-Bresse",
     "level": "Bac+2",
     "description": "Analyste Développeur Informatique",
@@ -9,7 +9,7 @@
     },
     {
         "title": "LP Devops Lyon1",
-        "image": "./assets/img-portfolio/meteoIMG.png",
+        "image": "meteoIMG.png",
         "city": "Lyon",
         "level": "Bac+3",
         "description": "Développeur d'application d'entreprise, administrateur de systèmes d'information (DEVOPS)",
@@ -17,7 +17,7 @@
     },
     {
         "title": "Chef de projet ingénierie logicielle IPI",
-        "image": "./assets/img-portfolio/meteoIMG.png",
+        "image": "meteoIMG.png",
         "city": "Lyon",
         "level": "Bac+5",
         "description": "Test",
