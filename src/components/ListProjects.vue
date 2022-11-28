@@ -37,6 +37,7 @@ export default {
   },
   methods :{
     getImagePath(img) {
+    console.log(img);
     return shared.getImagePath(img)
     }
   }
@@ -44,23 +45,4 @@ export default {
 </script>
 
 <style>
-.frame {
-  margin: auto;
-  padding: 15px 25px;
-  max-width: 400px;
-  max-height: 300px;
-}
-
-.container{
-  position: relative;
-  text-align: center;
-  color: black;
-}
-
-.center{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 </style>
