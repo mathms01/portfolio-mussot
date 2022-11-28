@@ -1,25 +1,38 @@
 <template>
-    <Splide :options="{ rewind: true }" aria-label="Mes projects">
-        <SplideSlide v-for="item in items"
-      :key=item.title>
-        <img :src="item.link" :alt="item.title">
-        </SplideSlide>
-    </Splide>
+    <v-carousel hide-delimiters height="300">
+        <v-carousel-item
+          v-for="item in items"
+          :key="item.title"
+          :src=getImagePath(item.image)
+          cover
+        >
+          <!-- <v-img :src=getImagePath(item.image) height="100%" cover/> -->
+            <div class="d-flex fill-height justify-center align-center">
+              <div class="text-h2">
+                {{item.title}}
+              </div>
+            </div>
+        </v-carousel-item>
+      </v-carousel>
 </template>
 
 <script>
 import projects from '@/assets/projects.json';
-import { Splide, SplideSlide } from '@splidejs/vue-splide';
-import '@splidejs/vue-splide/css';
+import shared from '@/utilities/shared.js';
 
 export default {
   name: 'CarrousselProjects',
-  components: { Splide, SplideSlide },
+  components: {  },
   props: {
   },
   data () {
     return {
       items: projects
+    }
+  },
+  methods :{
+    getImagePath(img) {
+    return shared.getImagePath(img)
     }
   }
 }

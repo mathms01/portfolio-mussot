@@ -1,16 +1,40 @@
 <template>
   <div id="nav" class="navigation">
-    <ul>
-      <li @click="showNav=!showNav"><font-awesome-icon icon="fa-solid fa-bars" /></li>
+      <v-app-bar-nav-icon @click.stop="showNav = !showNav"></v-app-bar-nav-icon>
       <div v-if="showNav">
-      <li><router-link to="/home">Home</router-link></li>
-      <li><router-link to="/cv">CV</router-link></li>
-      <li><router-link to="/portfolio">Portfolio</router-link></li>
-      <li><router-link to="/freelance">Freelance</router-link></li>
-      <li><router-link to="/qualifications">Qualifications</router-link></li>
-      <li><router-link to="/about">About</router-link></li>
+        <v-list
+          nav
+          dense
+        >
+          <v-list-item-group
+            active-class="deep-purple--text text--accent-4"
+          >
+            <v-list-item>
+              <v-list-item-title><router-link to="/home">Home</router-link></v-list-item-title>
+            </v-list-item>
+  
+            <v-list-item>
+              <v-list-item-title><router-link to="/cv">CV</router-link></v-list-item-title>
+            </v-list-item>
+  
+            <v-list-item>
+              <v-list-item-title><router-link to="/portfolio">Portfolio</router-link></v-list-item-title>
+            </v-list-item>
+  
+            <v-list-item>
+              <v-list-item-title><router-link to="/freelance">Freelance</router-link></v-list-item-title>
+            </v-list-item>
+
+            <v-list-item>
+              <v-list-item-title><router-link to="/qualifications">Qualifications</router-link></v-list-item-title>
+            </v-list-item>
+
+            <v-list-item>
+              <v-list-item-title><router-link to="/about">About</router-link></v-list-item-title>
+            </v-list-item>
+          </v-list-item-group>
+        </v-list>
       </div>
-    </ul>
   </div>
   <router-view/>
 </template>
@@ -37,18 +61,5 @@ export default {
     position: fixed;
     right: 40%;
   }
-  .navigation ul {
-    list-style: none;
-  }
-  .navigation ul li {
-    margin-bottom: 16px;
-    text-transform: uppercase;
-  }
-  .navigation ul a {
-    color: grey;
-    text-decoration: none;
-  }
-  .navigation ul a:hover, .navigation ul a.router-link-exact-active {
-    text-decoration: underline;
-  }
+
 </style>
