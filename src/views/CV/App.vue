@@ -1,7 +1,30 @@
 <template>
 <h1>Mon CV</h1>
-<img class="frame" src="@/assets/cvFreelance.jpg"/>
-<a type="button" class="button" href="@/assets/cvFreelance.pdf" download="cv_mussot.pdf">Télécharger</a>
+  <v-container  class="fill-height" fluid>
+      <v-row>
+        <v-col cols="2">
+
+        </v-col>
+        <v-col cols="8">
+          <v-sheet>
+            <v-img
+            :aspect-ratio="1"
+            :src=sourceCvJpg
+            />
+          </v-sheet>
+        </v-col>
+        <v-col cols="2">
+          <v-btn
+            class="vert-text-btn"
+            color="primary"
+            href='../../assets/cvFreelance.pdf'
+            download
+          >
+            Télécharger
+          </v-btn>
+        </v-col>
+      </v-row>
+  </v-container>
 </template>
 
 <script>
@@ -12,7 +35,7 @@ export default {
   },
   data(){
     return {
-      source1:'@/assets/cvFreelance.jpg'
+      sourceCvJpg: require('../../assets/cvFreelance.jpg'),
     }
   }
 }
@@ -28,24 +51,10 @@ export default {
   margin-top: 60px;
 }
 
-.frame {
-  border: 3px solid #2c3e50;
-  background: #eee;
-  margin: auto;
-  padding: 15px 25px;
-}
-
-.button {
-  background-color: #555555; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  position: absolute;
-  -ms-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
+.vert-text-btn {
+  display: block;
   transform: rotate(90deg);
+
+  border-width: 5px;
 }
 </style>

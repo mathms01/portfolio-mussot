@@ -1,40 +1,38 @@
 <template>
-  <div id="nav" class="navigation">
+  <div class="navigation">
       <v-app-bar-nav-icon @click.stop="showNav = !showNav"></v-app-bar-nav-icon>
-      <div v-if="showNav">
+      <v-card
+      class="mx-auto"
+      max-width="150"
+      v-if="showNav">
         <v-list
-          nav
-          dense
+        density="compact"
         >
-          <v-list-item-group
-            active-class="deep-purple--text text--accent-4"
-          >
-            <v-list-item>
-              <v-list-item-title><router-link to="/home">Home</router-link></v-list-item-title>
+            <v-list-item to="/home">
+              <v-list-item-title>Home</v-list-item-title>
             </v-list-item>
   
-            <v-list-item>
-              <v-list-item-title><router-link to="/cv">CV</router-link></v-list-item-title>
+            <v-list-item to="/cv">
+              <v-list-item-title>CV</v-list-item-title>
             </v-list-item>
   
-            <v-list-item>
-              <v-list-item-title><router-link to="/portfolio">Portfolio</router-link></v-list-item-title>
+            <v-list-item to="/portfolio">
+              <v-list-item-title>Portfolio</v-list-item-title>
             </v-list-item>
   
-            <v-list-item>
-              <v-list-item-title><router-link to="/freelance">Freelance</router-link></v-list-item-title>
+            <v-list-item to="/freelance">
+              <v-list-item-title>Freelance</v-list-item-title>
             </v-list-item>
 
-            <v-list-item>
-              <v-list-item-title><router-link to="/qualifications">Qualifications</router-link></v-list-item-title>
+            <v-list-item to="/qualifications">
+              <v-list-item-title>Qualifications</v-list-item-title>
             </v-list-item>
 
-            <v-list-item>
-              <v-list-item-title><router-link to="/about">About</router-link></v-list-item-title>
+            <v-list-item to="/about">
+              <v-list-item-title>About</v-list-item-title>
             </v-list-item>
-          </v-list-item-group>
         </v-list>
-      </div>
+      </v-card>
   </div>
   <router-view/>
 </template>
