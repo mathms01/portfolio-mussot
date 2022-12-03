@@ -1,6 +1,10 @@
 <template>
   <div class="navigation">
-      <v-app-bar-nav-icon @click.stop="showNav = !showNav"></v-app-bar-nav-icon>
+      <v-btn
+        icon="mdi-menu"
+        @click.stop="showNav = !showNav"
+      ></v-btn>
+      <v-icon>feedback</v-icon>
       <v-card
       class="mx-auto"
       max-width="150"

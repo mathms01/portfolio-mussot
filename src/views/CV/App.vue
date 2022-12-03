@@ -1,29 +1,19 @@
 <template>
 <h1>Mon CV</h1>
-  <v-container  class="fill-height" fluid>
-      <v-row>
-        <v-col cols="2">
-
-        </v-col>
-        <v-col cols="8">
-          <v-sheet>
-            <v-img
-            :aspect-ratio="1"
-            :src=sourceCvJpg
-            />
-          </v-sheet>
-        </v-col>
-        <v-col cols="2">
-          <v-btn
-            class="vert-text-btn"
-            color="primary"
-            href='../../assets/cvFreelance.pdf'
-            download
-          >
-            Télécharger
-          </v-btn>
-        </v-col>
-      </v-row>
+  <v-container fluid>
+    <v-sheet>
+      <v-img
+      :aspect-ratio="1"
+      :src=sourceCvJpg
+      />
+    </v-sheet>
+    <v-btn
+      color="primary"
+      href='../../assets/cvFreelance.pdf'
+      download
+      >
+        Télécharger
+  </v-btn>
   </v-container>
 </template>
 
@@ -49,12 +39,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
-
-.vert-text-btn {
-  display: block;
-  transform: rotate(90deg);
-
-  border-width: 5px;
 }
 </style>

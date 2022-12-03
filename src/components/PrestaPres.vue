@@ -1,53 +1,85 @@
 <template>
-    <section>
-        <h3>CE QUE JE FAIS</h3>
-        <h2>Freelance</h2>
-        <hr class="solid"/>
-        <div>
-            <div class="container block">
-                <font-awesome-icon icon="fa-solid fa-user-secret" />
-                <h2>1234</h2>
-                <p>blalbla</p>
-            </div>
-            <div class="container block">
-                <font-awesome-icon icon="fa-solid fa-user-secret" />
-                <h2>1234</h2>
-                <p>blalbla</p>
-            </div>
-            <div class="container block">
-                <font-awesome-icon icon="fa-solid fa-user-secret" />
-                <h2>1234</h2>
-                <p>blalbla</p>
-            </div>
-            <div class="container block">
-                <font-awesome-icon icon="fa-solid fa-user-secret" />
-                <h2>1234</h2>
-                <p>blalbla</p>
-            </div>
-        </div>
-        <div>
-            <div class="container block">
-                <font-awesome-icon icon="fa-solid fa-user-secret" />
-                <h2>1234</h2>
-                <p>blalbla</p>
-            </div>
-            <div class="container block">
-                <font-awesome-icon icon="fa-solid fa-user-secret" />
-                <h2>1234</h2>
-                <p>blalbla</p>
-            </div>
-            <div class="container block">
-                <font-awesome-icon icon="fa-solid fa-user-secret" />
-                <h2>1234</h2>
-                <p>blalbla</p>
-            </div>
-            <div class="container block">
-                <font-awesome-icon icon="fa-solid fa-user-secret" />
-                <h2>1234</h2>
-                <p>blalbla</p>
-            </div>
-        </div>
-    </section>
+    <v-container>
+        <v-card>
+            <v-card-title>
+                <h3>CE QUE JE FAIS</h3>
+                <h2>Freelance</h2>
+            </v-card-title>
+            <v-card-text>
+                <v-divider></v-divider>
+                <v-row justify="space-around">
+              <v-col class="d-flex justify-center align-center">
+                <v-sheet
+                  :rounded=true
+                  :elevation=6
+                  class="d-flex justify-center align-center"
+                  height="100"
+                  width="100"
+                >
+                  <h2>1234</h2>
+                </v-sheet>
+              </v-col>
+              <v-col class="d-flex justify-center align-center">
+                <v-sheet
+                  :rounded=true
+                  :elevation=6
+                  class="d-flex justify-center align-center"
+                  height="100"
+                  width="100"
+                >
+                  <h2>1234</h2>
+                </v-sheet>
+              </v-col>
+              <v-col class="d-flex justify-center align-center">
+                <v-sheet
+                  :rounded=true
+                  :elevation=6
+                  class="d-flex justify-center align-center"
+                  height="100"
+                  width="100"
+                >
+                  <h2>1234</h2>
+                </v-sheet>
+              </v-col>
+            </v-row>
+            <v-row justify="space-around">
+              <v-col class="d-flex justify-center align-center">
+                <v-sheet
+                  :rounded=true
+                  :elevation=6
+                  class="d-flex justify-center align-center"
+                  height="100"
+                  width="100"
+                >
+                  <h2>1234</h2>
+                </v-sheet>
+              </v-col>
+              <v-col class="d-flex justify-center align-center">
+                <v-sheet
+                  :rounded=true
+                  :elevation=6
+                  class="d-flex justify-center align-center"
+                  height="100"
+                  width="100"
+                >
+                  <h2>1234</h2>
+                </v-sheet>
+              </v-col>
+              <v-col class="d-flex justify-center align-center">
+                <v-sheet
+                  :rounded=true
+                  :elevation=6
+                  class="d-flex justify-center align-center"
+                  height="100"
+                  width="100"
+                >
+                  <h2>1234</h2>
+                </v-sheet>
+              </v-col>
+            </v-row>
+            </v-card-text>
+        </v-card>
+    </v-container>
 </template>
 
 <script>
@@ -59,17 +91,5 @@ export default {
 </script>
 
 <style>
-hr.solid {
-  border-top: 3px solid #bbb;
-}
 
-.block{
-  display: inline-block;
-  height: 100px;
-  padding: 5px;  
-}
-
-.container{
-    width: 200px;
-}
 </style>

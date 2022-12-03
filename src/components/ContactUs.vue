@@ -8,9 +8,10 @@
             <v-col cols="6">
               <v-card
                 class="mx-auto"
+                height='100%'
               >
                 <v-card-title>
-                  Pour m'envoyer un message
+                  <h3>Pour m'envoyer un message</h3>
                 </v-card-title>
             
                 <v-spacer></v-spacer>
@@ -55,9 +56,9 @@
               </v-card>
             </v-col>
             <v-col cols="6">
-              <v-card>
+              <v-card height='100%'>
                 <v-card-title>
-                  Mes informations
+                  <h3>Mes informations</h3>
                 </v-card-title>
             
                 <v-spacer></v-spacer>

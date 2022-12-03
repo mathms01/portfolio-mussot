@@ -1,15 +1,22 @@
 <template>
-  <NavigationBar/>
+  <v-app :theme="theme">
+    <NavigationBar/>
+    <v-footer>
+      <Footer></Footer>
+    </v-footer>
+  </v-app>
 </template>
 
 <script>
 import NavigationBar from '@/components/NavigationBar.vue'
+import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
   components: {
     NavigationBar,
-  }
+    Footer
+},
 }
 </script>
 

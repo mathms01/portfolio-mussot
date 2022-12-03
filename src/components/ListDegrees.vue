@@ -38,7 +38,6 @@ export default {
   },
   methods :{
     getImagePath(img) {
-    console.log(img);
     return shared.getImagePath(img)
     }
   }
