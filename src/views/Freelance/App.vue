@@ -2,18 +2,21 @@
 <h1>Freelance</h1>
 <FreelancePresVue></FreelancePresVue>
 <PrestaPresVue></PrestaPresVue>
+<TechnoPresVue></TechnoPresVue>
 
 </template>
 
 <script>
 import FreelancePresVue from '@/components/FreelancePres.vue';
 import PrestaPresVue from '@/components/PrestaPres.vue'
+import TechnoPresVue from '@/components/TechnoPres.vue';
 
 export default {
   name: 'App',
   components: {
     FreelancePresVue,
     PrestaPresVue,
+    TechnoPresVue
   }
 }
 </script>

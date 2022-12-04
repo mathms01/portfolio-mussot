@@ -1,14 +1,13 @@
 <template>
-  <div class="navigation">
+  <div>
       <v-btn
         icon="mdi-menu"
         @click.stop="showNav = !showNav"
       ></v-btn>
-      <v-icon>feedback</v-icon>
-      <v-card
-      class="mx-auto"
-      max-width="150"
-      v-if="showNav">
+      <v-navigation-drawer
+          v-model="showNav"
+          temporary
+        >
         <v-list
         density="compact"
         >
@@ -36,9 +35,8 @@
               <v-list-item-title>About</v-list-item-title>
             </v-list-item>
         </v-list>
-      </v-card>
+      </v-navigation-drawer>
   </div>
-  <router-view/>
 </template>
 
 <script>
@@ -56,12 +54,5 @@ export default {
 </script>
 
 <style>
-  .navigation {
-    width: 100vw;
-    min-height: 100vh;
-    padding: 16px;
-    position: fixed;
-    right: 40%;
-  }
 
 </style>
