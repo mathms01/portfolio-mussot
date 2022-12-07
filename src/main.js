@@ -15,6 +15,9 @@ const vuetify = createVuetify({
   directives,
   icons: {
     iconfont: 'mdi',
+  },
+  theme: {
+    defaultTheme: 'dark'
   }
 })
 

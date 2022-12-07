@@ -1,16 +1,16 @@
 <template>
-  <v-app :theme="theme">
+  <v-app>
     <v-app-bar>
+      <v-btn
+        icon="mdi-menu"
+        @click.stop="showNav = !showNav"
+      ></v-btn>
       <v-spacer></v-spacer>
 
-      <v-btn
-        :prepend-icon="theme === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night'"
-        @click="onClick"
-      >Toggle Theme</v-btn>
     </v-app-bar>
 
     <v-main>
-      <NavigationBar/>
+      <NavigationBar v-if="showNav" />
       <router-view/>
     </v-main>
     <v-footer>
@@ -28,7 +28,12 @@ export default {
   components: {
     NavigationBar,
     Footer
-},
+  },
+  data(){
+    return {
+      showNav: false
+    }
+  }
 }
 </script>
 

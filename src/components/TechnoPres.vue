@@ -16,9 +16,10 @@
                   height="100"
                   width="100"
                 >
-                  <v-btn
+                  <v-icon
+                    size="x-large"
                     icon="mdi-dot-net"
-                  ></v-btn>
+                  ></v-icon>
                   <h2>.NET</h2>
                 </v-sheet>
               </v-col>
@@ -30,9 +31,10 @@
                   height="100"
                   width="100"
                 >
-                  <v-btn
+                  <v-icon
+                    size="x-large"
                     icon="mdi-vuejs"
-                  ></v-btn>
+                  ></v-icon>
                   <h2>VUE js</h2>
                 </v-sheet>
               </v-col>
@@ -44,9 +46,10 @@
                   height="100"
                   width="100"
                 >
-                  <v-btn
+                  <v-icon
+                    size="x-large"
                     icon="mdi-leaf"
-                  ></v-btn>
+                  ></v-icon>
                   <h2>MongoDB</h2>
                 </v-sheet>
               </v-col>
@@ -60,9 +63,10 @@
                   height="100"
                   width="100"
                 >
-                  <v-btn
+                  <v-icon
+                    size="x-large"
                     icon="mdi-microsoft-azure"
-                  ></v-btn>
+                  ></v-icon>
                   <h2>Azure Cloud</h2>
                 </v-sheet>
               </v-col>
@@ -74,9 +78,10 @@
                   height="100"
                   width="100"
                 >
-                  <v-btn
+                  <v-icon
+                    size="x-large"
                     icon="mdi-microsoft-azure-devops"
-                  ></v-btn> 
+                  ></v-icon> 
                   <h2>Azure Devops</h2>
                 </v-sheet>
               </v-col>
@@ -88,9 +93,10 @@
                   height="100"
                   width="100"
                 >
-                  <v-btn
+                  <v-icon
+                    size="x-large"
                     icon="mdi-docker"
-                  ></v-btn> 
+                  ></v-icon> 
                   <h2>Docker</h2>
                 </v-sheet>
               </v-col>

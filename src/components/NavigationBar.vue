@@ -1,11 +1,6 @@
 <template>
   <div>
-      <v-btn
-        icon="mdi-menu"
-        @click.stop="showNav = !showNav"
-      ></v-btn>
       <v-navigation-drawer
-          v-model="showNav"
           temporary
         >
         <v-list
@@ -44,11 +39,6 @@ export default {
   name: 'NavigationBar',
   props: {
     
-  },
-  data(){
-    return {
-      showNav: false
-    }
   }
 }
 </script>
