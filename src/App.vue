@@ -13,7 +13,7 @@
       <NavigationBar v-if="showNav" />
       <router-view/>
     </v-main>
-    <v-footer>
+    <v-footer absolute app>
       <Footer></Footer>
     </v-footer>
   </v-app>

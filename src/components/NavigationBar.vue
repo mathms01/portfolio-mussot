@@ -1,10 +1,12 @@
 <template>
-  <div>
+  <v-container>
       <v-navigation-drawer
-          temporary
+          floating
+          permanent
         >
         <v-list
         density="compact"
+        nav
         >
             <v-list-item to="/home">
               <v-list-item-title>Home</v-list-item-title>
@@ -31,7 +33,7 @@
             </v-list-item>
         </v-list>
       </v-navigation-drawer>
-  </div>
+  </v-container>
 </template>
 
 <script>
