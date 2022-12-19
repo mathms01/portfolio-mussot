@@ -9,99 +9,67 @@
                 <v-divider></v-divider>
                 <v-row justify="space-around">
               <v-col class="d-flex justify-center align-center">
-                <v-sheet
-                  :rounded=true
-                  :elevation=6
-                  class="align-center"
-                  height="100"
-                  width="100"
-                >
-                  <v-icon
-                    size="x-large"
-                    icon="mdi-dot-net"
-                  ></v-icon>
-                  <h2>.NET</h2>
-                </v-sheet>
+                <v-btn
+                  size="x-large"
+                  icon="mdi-dot-net"
+                  @click="selectedIndex = '.NET'"
+                ></v-btn>
               </v-col>
               <v-col class="d-flex justify-center align-center">
-                <v-sheet
-                  :rounded=true
-                  :elevation=6
-                  class="align-center"
-                  height="100"
-                  width="100"
-                >
-                  <v-icon
+                  <v-btn
                     size="x-large"
                     icon="mdi-vuejs"
-                  ></v-icon>
-                  <h2>VUE js</h2>
-                </v-sheet>
+                    @click="selectedIndex = 'VUE'"
+                  ></v-btn>
               </v-col>
               <v-col class="d-flex justify-center align-center">
-                <v-sheet
-                  :rounded=true
-                  :elevation=6
-                  class="align-center"
-                  height="100"
-                  width="100"
-                >
-                  <v-icon
-                    size="x-large"
-                    icon="mdi-leaf"
-                  ></v-icon>
-                  <h2>MongoDB</h2>
-                </v-sheet>
+                <v-btn
+                  size="x-large"
+                  icon="mdi-leaf"
+                  @click="selectedIndex = 'MongoDB'"
+                ></v-btn>
               </v-col>
             </v-row>
             <v-row justify="space-around">
               <v-col class="d-flex justify-center align-center">
-                <v-sheet
-                  :rounded=true
-                  :elevation=6
-                  class="align-center"
-                  height="100"
-                  width="100"
-                >
-                  <v-icon
-                    size="x-large"
-                    icon="mdi-microsoft-azure"
-                  ></v-icon>
-                  <h2>Azure Cloud</h2>
-                </v-sheet>
+                <v-btn
+                  size="x-large"
+                  icon="mdi-microsoft-azure"
+                  @click="selectedIndex = 'Azure'"
+                ></v-btn>
               </v-col>
               <v-col class="d-flex justify-center align-center">
-                <v-sheet
-                  :rounded=true
-                  :elevation=6
-                  class="align-center"
-                  height="100"
-                  width="100"
-                >
-                  <v-icon
-                    size="x-large"
-                    icon="mdi-microsoft-azure-devops"
-                  ></v-icon> 
-                  <h2>Azure Devops</h2>
-                </v-sheet>
+                <v-btn
+                  size="x-large"
+                  icon="mdi-microsoft-azure-devops"
+                  @click="selectedIndex = 'Azure Devops'"
+                ></v-btn> 
               </v-col>
               <v-col class="d-flex justify-center align-center">
-                <v-sheet
-                  :rounded=true
-                  :elevation=6
-                  class="align-center"
-                  height="100"
-                  width="100"
-                >
-                  <v-icon
-                    size="x-large"
-                    icon="mdi-docker"
-                  ></v-icon> 
-                  <h2>Docker</h2>
-                </v-sheet>
+                <v-btn
+                  size="x-large"
+                  icon="mdi-docker"
+                  @click="selectedIndex = 'Docker'"
+                ></v-btn> 
               </v-col>
             </v-row>
             </v-card-text>
+        </v-card>
+        <v-card v-for="item in items" :key="item.title" :value="item.title" v-model="selectedItem">
+          <v-card-title v-if="selectedItem">
+            {{item.title}}
+            <v-btn
+            @click="close"
+            icon="mdi-close-circle"
+            >
+            </v-btn>
+          </v-card-title>
+          <v-card-subtitle v-if="selectedItem">
+            {{item.subtitle}}
+          </v-card-subtitle>
+          <v-card-text v-if="selectedItem">
+            {{item.description}}
+          </v-card-text>
         </v-card>
     </v-container>
 </template>
@@ -110,6 +78,53 @@
 export default {
   name: 'TechnoPres',
   props: {
+  },
+  data () {
+    return {
+      items: [
+        {
+          "title": ".NET",
+          "subtitle": "Test",
+          "description": "Test",
+        },
+        {
+          "title": "VUE",
+          "subtitle": "Test",
+          "description": "Test",
+        },
+        {
+          "title": "MongoDB",
+          "subtitle": "Test",
+          "description": "Test",
+        },
+        {
+          "title": "Azure",
+          "subtitle": "Test",
+          "description": "Test",
+        },
+        {
+          "title": "Azure Devops",
+          "subtitle": "Test",
+          "description": "Test",
+        },
+        {
+          "title": "Docker",
+          "subtitle": "Test",
+          "description": "Test",
+        },
+      ],
+      selectedIndex: null
+    }
+  },
+  computed: {
+    selectedItem() {
+      return this.items.find(item => item.title === this.selectedIndex);
+    },
+  },
+  methods:{
+    close(){
+      this.selectedIndex = null
+    }
   }
 }
 </script>

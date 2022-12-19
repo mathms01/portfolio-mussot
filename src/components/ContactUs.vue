@@ -64,26 +64,28 @@
                 <v-spacer></v-spacer>
 
                 <v-card-text>
-                      <h5>Mon adresse</h5>
+                  <v-expansion-panels>
+                    <v-expansion-panel
+                      title="Mon adresse"
+                    >
+                    <v-expansion-panel-text>
                       <span>123 rue du général pipou</span><br/>
                       <span>69100 VILLEURBANNE</span><br/>
                       <span>France</span>
-
-                      <v-spacer></v-spacer>
-
-                      <h5>Mon email</h5>
-                      <span>mathieu.mussot01@gmail.com</span>
-
-                      <v-spacer></v-spacer>
-
-                      <h5>Mon portable</h5>
-                      <span>06 73 22 90 95</span>
+                    </v-expansion-panel-text>
+                    </v-expansion-panel>
+                    <v-expansion-panel
+                      title="Mon email"
+                      text="mathieu.mussot01@gmail.com"
+                    >
+                    </v-expansion-panel>
+                    <v-expansion-panel
+                      title="Mon portable"
+                      text="06 73 22 90 95"
+                    >
+                    </v-expansion-panel>
+                  </v-expansion-panels>
                 </v-card-text>
-              </v-card>
-              <v-card>
-                <v-icon icon="mdi-plus "></v-icon>
-                <v-icon icon="mdi-antenna"></v-icon>
-                <v-icon icon="mdi-antenna"></v-icon>
               </v-card>
             </v-col>
           </v-row>

@@ -1,12 +1,14 @@
 <template>
   <v-app>
     <v-app-bar>
+      <h2 class="title">MATHIEU MUSSOT</h2>
+
+      <v-spacer></v-spacer>
+
       <v-btn
         icon="mdi-menu"
         @click.stop="showNav = !showNav"
       ></v-btn>
-      <v-spacer></v-spacer>
-
     </v-app-bar>
 
     <v-main>
@@ -48,6 +50,10 @@ export default {
   margin-left: auto;
   margin-right: auto;
 
+}
+
+.title{
+  margin-left: 30px;
 }
 
 
