@@ -1,21 +1,9 @@
 [
     {
-    "title": "Météo app",
+    "title": "Azure Devops Certif",
     "image": "meteoIMG.png",
-    "description": "Une application météo & news codé en Java",
-    "link": "https://github.com/mathms01/MeteoApp"
-    },
-    {
-    "title": "Calculatrice app",
-    "image": "calcuLAIDE.png",
-    "description": "Une application de calculatrice pas très belle mais fonctionnelle, codé en C#",
-    "link": "https://github.com/mathms01/CalculatriceApp"
-    },
-    {
-    "title": "Password manager",
-    "image": "PassWord-Manager.png",
-    "description": "Une application de gestion de mot de passe, codé en C#",
-    "link": "https://github.com/mathms01/PasswordManager"
+    "description": "Certification Azure Devops par Microsoft",
+    "link": "https://learn.microsoft.com/fr-fr/certifications/devops-engineer/"
     }
 ]
   

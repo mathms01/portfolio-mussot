@@ -2,7 +2,7 @@
     <section>
       <v-app>
         <h2>Me contacter</h2>
-        <h3>Créons un nouveau projet ensemble ou faites moi juste un coucou</h3>
+        <h1>Créons un nouveau projet ensemble ou faites moi juste un coucou</h1>
         <v-container  class="fill-height" fluid>
           <v-row>
             <v-col cols="6">
@@ -17,7 +17,7 @@
                 <v-spacer></v-spacer>
 
                 <v-card-text>
-                <v-form ref="form" v-model="valid" lazy-validation>
+                <v-form ref="form" v-model="valid" @submit.prevent="sendEmail" lazy-validation>
                   
                 <v-text-field
                   outlined
@@ -31,7 +31,6 @@
                 <v-text-field
                   outlined
                   v-model="email"
-                  :rules="emailRules"
                   label="E-mail"
                   required
                 ></v-text-field>
@@ -95,9 +94,21 @@
 </template>
 
 <script>
+import emailjs from '@emailjs/browser';
+
 export default {
   name: 'ContactUs',
   props: {
+  },
+  methods: {
+    sendEmail() {
+      emailjs.sendForm('service_4d3f0td', 'template_k6vtpvf', this.$refs.form, 'S08I5HBWR71_TAZc_')
+        .then((result) => {
+            console.log('SUCCESS!', result.text);
+        }, (error) => {
+            console.log('FAILED...', error.text);
+        });
+    }
   }
 }
 </script>

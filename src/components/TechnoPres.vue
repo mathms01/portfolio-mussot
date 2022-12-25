@@ -56,18 +56,27 @@
             </v-card-text>
         </v-card>
         <v-card v-for="item in items" :key="item.title" :value="item.title" v-model="selectedItem">
-          <v-card-title v-if="selectedItem">
-            {{item.title}}
-            <v-btn
-            @click="close"
-            icon="mdi-close-circle"
-            >
-            </v-btn>
-          </v-card-title>
-          <v-card-subtitle v-if="selectedItem">
+          <v-toolbar v-if="item === selectedItem">
+              <template v-slot:prepend>
+                <v-icon>{{item.icon}}</v-icon>
+              </template>
+
+              <v-toolbar-title class="text-h6">
+                {{item.title}}
+              </v-toolbar-title>
+  
+              <template v-slot:append>
+                <v-btn
+                @click="close"
+                icon="mdi-close-circle"
+                >
+                </v-btn>
+              </template>
+          </v-toolbar>
+          <v-card-subtitle v-if="item === selectedItem">
             {{item.subtitle}}
           </v-card-subtitle>
-          <v-card-text v-if="selectedItem">
+          <v-card-text v-if="item === selectedItem">
             {{item.description}}
           </v-card-text>
         </v-card>
@@ -86,31 +95,37 @@ export default {
           "title": ".NET",
           "subtitle": "Test",
           "description": "Test",
+          "icon": "mdi-dot-net"
         },
         {
           "title": "VUE",
           "subtitle": "Test",
           "description": "Test",
+          "icon": "mdi-vuejs"
         },
         {
           "title": "MongoDB",
           "subtitle": "Test",
           "description": "Test",
+          "icon": "mdi-leaf"
         },
         {
           "title": "Azure",
           "subtitle": "Test",
           "description": "Test",
+          "icon": "mdi-microsoft-azure"
         },
         {
           "title": "Azure Devops",
           "subtitle": "Test",
           "description": "Test",
+          "icon": "mdi-microsoft-azure-devops"
         },
         {
           "title": "Docker",
           "subtitle": "Test",
           "description": "Test",
+          "icon": "mdi-docker"
         },
       ],
       selectedIndex: null

@@ -17,7 +17,9 @@
                   height="100"
                   width="100"
                 >
-                  <h2>1234</h2>
+                  <v-icon>mdi-rocket-launch</v-icon>
+                  <h2>72</h2>
+                  <h3>projets finis</h3>
                 </v-sheet>
               </v-col>
               <v-col class="d-flex justify-center align-center">
@@ -28,8 +30,9 @@
                   height="100"
                   width="100"
                 >
+                  <v-icon>mdi-coffee</v-icon>
                   <h2>692</h2>
-                  <h3>tasses de thés</h3>
+                  <h3>tasses de thé bues</h3>
                 </v-sheet>
               </v-col>
               <v-col class="d-flex justify-center align-center">
@@ -40,7 +43,9 @@
                   height="100"
                   width="100"
                 >
-                  <h2>1234</h2>
+                  <v-icon>mdi-briefcase</v-icon>
+                  <h2>4</h2>
+                  <h3>années d' expérience</h3>
                 </v-sheet>
               </v-col>
               <v-col class="d-flex justify-center align-center">
@@ -51,7 +56,9 @@
                   height="100"
                   width="100"
                 >
-                  <h2>1234</h2>
+                  <v-icon>mdi-emoticon-tongue</v-icon>
+                  <h2>56</h2>
+                  <h3>clients conquis</h3>
                 </v-sheet>
               </v-col>
             </v-row>
