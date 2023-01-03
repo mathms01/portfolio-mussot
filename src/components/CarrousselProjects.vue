@@ -1,12 +1,12 @@
 <template>
-    <v-carousel hide-delimiters height="300">
+    <v-carousel show-arrows="hover" hide-delimiters
+      progress="primary" cycle height="300">
         <v-carousel-item
           v-for="item in items"
           :key="item.title"
           :src=getImagePath(item.image)
           cover
         >
-          <!-- <v-img :src=getImagePath(item.image) height="100%" cover/> -->
             <div class="d-flex fill-height justify-center align-center">
               <div class="text-h2">
                 {{item.title}}

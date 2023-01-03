@@ -1,12 +1,16 @@
 <template>
-<div class="banner">
-  <div class="child-items">
-    <HomePres class="pres"/>
-  </div>
-  <div class="child-items">
-  <CarrousselProjects class="carroussel"/>
-  </div>
-</div>
+<v-container fluid class="fill-height banner">
+  <v-row>
+    <v-col cols="1"></v-col>
+    <v-col cols="3">
+      <HomePres/>
+    </v-col>
+    <v-col cols="1"></v-col>
+    <v-col cols="7">
+      <CarrousselProjects/>
+    </v-col>
+  </v-row>
+</v-container>
 </template>
 
 <script>
@@ -29,21 +33,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
-}
-
-.child-items {
-    display: inline-block;
-    vertical-align: middle;
-    margin: auto;
-}
-
-.pres {
-  background-color: aqua;
-}
-
-.carroussel {
-  background-color:aquamarine;
+  width: 100%;
 }
 
 .banner {

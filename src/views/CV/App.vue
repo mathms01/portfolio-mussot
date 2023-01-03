@@ -10,10 +10,11 @@
     <v-btn
       color="primary"
       href='../../assets/cvFreelance.pdf'
+      class="spacebetween"
       download
       >
         Télécharger
-  </v-btn>
+    </v-btn>
   </v-container>
 </template>
 
@@ -39,5 +40,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.spacebetween{
+  margin-top: 10px;
 }
 </style>

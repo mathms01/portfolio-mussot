@@ -11,7 +11,7 @@
                 height='100%'
               >
                 <v-card-title>
-                  <h3>Pour m'envoyer un message</h3>
+                  <h3 color="primary">Pour m'envoyer un message</h3>
                 </v-card-title>
             
                 <v-spacer></v-spacer>
@@ -44,7 +44,7 @@
             
                 <v-btn
                   outlined
-                  color="success"
+                  color="primary"
                   class="mr-4"
                   @click="validate"
                 >
@@ -85,6 +85,20 @@
                     </v-expansion-panel>
                   </v-expansion-panels>
                 </v-card-text>
+
+                <v-spacer/>
+                
+                <v-card-text class="pa-0">
+                  <v-col class="text-center">
+                    <v-btn
+                      v-for="icon in icons"
+                      :key="icon"
+                      class="mx-4"
+                      :icon="icon"
+                      variant="text"
+                    ></v-btn>
+                  </v-col>
+                </v-card-text>
               </v-card>
             </v-col>
           </v-row>
@@ -99,6 +113,16 @@ import emailjs from '@emailjs/browser';
 export default {
   name: 'ContactUs',
   props: {
+  },
+  data () {
+    return {
+      icons: [
+      'mdi-facebook',
+      'mdi-twitter',
+      'mdi-linkedin',
+      'mdi-instagram',
+    ],
+    }
   },
   methods: {
     sendEmail() {
