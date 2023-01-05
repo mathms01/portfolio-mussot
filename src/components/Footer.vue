@@ -3,15 +3,7 @@
     <v-footer
       class="text-center d-flex flex-column"
     >
-      <div>
-        <v-btn
-          v-for="icon in icons"
-          :key="icon"
-          class="mx-4"
-          :icon="icon"
-          variant="text"
-        ></v-btn>
-      </div>
+      <SocialNetworksBarVue></SocialNetworksBarVue>
   
       <div class="pt-0">
         Portfolio.github.pages est le portfolio de présentation de <b>Mathieu Mussot</b>. Accédez à mes projets, mes expériences, mes skills, mes diplômes, mon activité freelance, mes prestations...
@@ -28,20 +20,15 @@
 </template>
 
 <script>
+import SocialNetworksBarVue from './SocialNetworksBar.vue';
+
 export default {
   name: 'FooterVue',
+  components: {
+    SocialNetworksBarVue
+  },
   props: {
   },
-  data () {
-    return {
-      icons: [
-      'mdi-facebook',
-      'mdi-twitter',
-      'mdi-linkedin',
-      'mdi-instagram',
-    ],
-    }
-  }
 }
 </script>
 

@@ -1,9 +1,16 @@
 <template>
-<h1>Freelance</h1>
-<FreelancePresVue></FreelancePresVue>
-<PrestaPresVue></PrestaPresVue>
-<TechnoPresVue></TechnoPresVue>
-
+<v-container>
+  <h1>Freelance</h1>
+  <v-row>
+    <FreelancePresVue></FreelancePresVue>
+  </v-row>
+  <v-row>
+    <PrestaPresVue></PrestaPresVue>
+  </v-row>
+  <v-row>
+    <TechnoPresVue></TechnoPresVue>
+  </v-row>
+</v-container>
 </template>
 
 <script>

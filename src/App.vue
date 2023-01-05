@@ -55,6 +55,4 @@ export default {
 .title{
   margin-left: 30px;
 }
-
-
 </style>

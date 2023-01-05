@@ -90,13 +90,7 @@
                 
                 <v-card-text class="pa-0">
                   <v-col class="text-center">
-                    <v-btn
-                      v-for="icon in icons"
-                      :key="icon"
-                      class="mx-4"
-                      :icon="icon"
-                      variant="text"
-                    ></v-btn>
+                    <SocialNetworksBarVue></SocialNetworksBarVue>
                   </v-col>
                 </v-card-text>
               </v-card>
@@ -109,20 +103,14 @@
 
 <script>
 import emailjs from '@emailjs/browser';
+import SocialNetworksBarVue from './SocialNetworksBar.vue';
 
 export default {
   name: 'ContactUs',
-  props: {
+  components: {
+    SocialNetworksBarVue
   },
-  data () {
-    return {
-      icons: [
-      'mdi-facebook',
-      'mdi-twitter',
-      'mdi-linkedin',
-      'mdi-instagram',
-    ],
-    }
+  props: {
   },
   methods: {
     sendEmail() {
