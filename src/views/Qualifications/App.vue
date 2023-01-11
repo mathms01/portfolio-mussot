@@ -1,6 +1,6 @@
 <template>
 <h1>Qualifications</h1>
-<h2>Degrees</h2>
+<h2>Diplômes</h2>
 <ListDegrees></ListDegrees>
 <h2>Certifications</h2>
 <ListCertifications></ListCertifications>

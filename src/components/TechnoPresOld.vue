@@ -67,26 +67,26 @@
           <div v-if="item === selectedItem">
           <v-row>
             <v-col class="d-flex justify-center align-center" cols="2">
-              <v-icon size="x-large" class="outlined" color="primary">
+              <v-icon size="x-large">
                 {{item.icon}}
               </v-icon>
             </v-col>
-            <v-col cols="1" class="d-flex justify-center align-center">
-                <v-divider vertical inset></v-divider>
+            <v-col cols="1">
+              <v-layout justify-center fill-height>
+                <v-divider vertical></v-divider>
+              </v-layout>
             </v-col>
             <v-col cols="9">
-              <v-card-title class="text-h6">
-                  <span>{{item.title}}</span>
+              <v-card-title class="text-h6 text-left">
+                {{item.title}}
 
-                  <v-spacer></v-spacer>
-
-                  <v-btn
-                    @click="close"
-                    icon="mdi-close-circle"
-                    color="primary"
-                    size="30"
-                    >
-                  </v-btn>
+                <v-btn
+                @click="close"
+                icon="mdi-close-circle"
+                color="primary"
+                size="small"
+                >
+                </v-btn>
             </v-card-title>
             <v-card-subtitle class="text-left">
               {{item.subtitle}}
@@ -103,7 +103,7 @@
 
 <script>
 export default {
-  name: 'TechnoPres',
+  name: 'TechnoPresOld',
   props: {
   },
   data () {
@@ -162,6 +162,6 @@ export default {
 }
 </script>
 
-<style scoped>
-@import '@/scss/global.css';
+<style>
+
 </style>

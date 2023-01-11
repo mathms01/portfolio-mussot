@@ -15,9 +15,10 @@
                     <v-card
                       rounded="xl"
                       :elevation="isHovering ? 12 : 2"
+                      :class="{ 'on-hover': isHovering }"
                       class="align-center"
-                      :height="isHovering ? 200 : 100"
-                      :width="isHovering ? 400 : 200"
+                      min-height="200"
+                      min-width="400"
                       v-bind="props"
                     >
                     <div v-if="!isHovering">
@@ -26,19 +27,26 @@
                         size="x-large"
                         color="primary"
                       > {{ item.icon }}</v-icon>
-                      <h2 class="space-around-min" v-if="!isHovering">{{ item.title }}</h2>
+                      <h2 class="space-around-min">{{ item.title }}</h2>
+                      <h3 class="space-around">{{item.price}} TTC</h3>
                     </div>
                     <div v-if="isHovering">
-                      <v-toolbar>
+                      <v-card-title>
                           <v-icon color="primary">{{item.icon}}</v-icon>
+                          <v-spacer></v-spacer>
                             {{item.title}}
-                      </v-toolbar>
+                      </v-card-title>
                       <v-card-text>
                         {{item.description}}
                       </v-card-text>
                       <v-expand-transition>
                         <v-card-actions>
-                          {{item.price}} TTC
+                          <v-btn
+                            color="primary"
+                            variant="outlined"
+                            append-icon="mdi-currency-eur">
+                            {{item.price}} TTC
+                          </v-btn>
                           <v-spacer></v-spacer>
                           <v-btn
                             color="primary"
@@ -98,5 +106,13 @@ export default {
 
 <style scoped>
 @import '@/scss/global.css';
+
+.v-card {
+    transition: opacity .4s ease-in-out;
+    opacity: 1;
+  }
+  .v-card:not(.on-hover) {
+    opacity: 0.6;
+  }
 
 </style>

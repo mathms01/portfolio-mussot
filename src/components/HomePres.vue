@@ -23,6 +23,7 @@
       <v-btn
           color="primary"
           to="/about"
+          class="space-around-min"
         >
             Me contacter
         </v-btn>
@@ -38,7 +39,8 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+@import '@/scss/global.css';
 .fit-picture {
     width: 100px;
 }
