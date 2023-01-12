@@ -63,10 +63,8 @@
             </v-row>
             </v-card-text> -->
         <v-card-text>
-          <v-card v-for="(item, index) in items" :key="item.title" :value="item.title" class="space-around-min">
+          <v-card v-for="(item, index) in items" :key="item.title" :value="item.title" :class="index % 2 === 0 ?'space-before' : 'space-after'" class="space-around-min" elevation="10">
             <v-row>
-              <v-col v-if="index % 2 === 0" cols="1">
-              </v-col>
               <v-col class="d-flex justify-center align-center" cols="2">
                 <v-icon size="x-large" class="outlined" color="primary">
                   {{item.icon}}
@@ -75,7 +73,7 @@
               <v-col cols="1" class="d-flex justify-center align-center">
                   <v-divider vertical inset></v-divider>
               </v-col>
-              <v-col :cols="index % 2 === 0 ? 8 : 9">
+              <v-col cols="9">
                 <v-card-title class="text-h6 text-left">
                   <v-row>
                     <v-col cols="2">
@@ -102,9 +100,6 @@
                 {{item.description}}
               </v-card-text>
               </v-col>
-            </v-row>
-            <v-row>
-              <v-divider></v-divider>
             </v-row>
           </v-card>
         </v-card-text>

@@ -5,6 +5,14 @@
     margin-bottom: 30px;
 }
 
+.space-before{
+    margin-left: 40px;
+}
+
+.space-after{
+    margin-right: 40px;
+}
+
 .space-around-min {
     margin-top: 10px;
     margin-bottom: 10px;

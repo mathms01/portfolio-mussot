@@ -16,6 +16,36 @@
     "image": "PassWord-Manager.png",
     "description": "Une application de gestion de mot de passe, codé en C#",
     "link": "https://github.com/mathms01/PasswordManager"
+    },
+    {
+    "title": "Chat Bot JO",
+    "image": "Robot_icon.png",
+    "description": "Chat Bot d'information sur les Jeux Olympiques",
+    "link": "https://github.com/mathms01/chatbottp2"
+    },
+    {
+    "title": "API Gestion des JO 2020",
+    "image": "API_icon.png",
+    "description": "Application de gestion des sports et des athlètes présentes aux Jeux Olympiques de 2020",
+    "link": "https://github.com/mathms01/OGadmin"
+    },
+    {
+    "title": "Projet Warf",
+    "image": "Warf_icon.png",
+    "description": "Jeu Mobile TowerDefence où on doit survivre à des vagues d'ennemis mortels",
+    "link": "https://github.com/mathms01/ProjectWarf"
+    },
+    {
+    "title": "Bot Discord en python",
+    "image": "Discordbot_icon.png",
+    "description": "Base d'un bot discord connecté à l'api tiktok",
+    "link": "https://github.com/mathms01/bot_discord_tiktok"
+    },
+    {
+    "title": "Bot Twitter en python",
+    "image": "Twitterbot_icon.png",
+    "description": "Bot Twitter de réponse automatique aux tweets selectionnés",
+    "link": "https://github.com/mathms01/bottwitter_tiktok"
     }
 ]
   

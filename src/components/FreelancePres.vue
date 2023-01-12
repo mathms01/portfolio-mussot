@@ -18,7 +18,7 @@
                     :rounded=true
                     class="text-center v-card_border"
                     height="140"
-                    width="150"
+                    width=100%
                   >
                     <v-card-title class="space-around-min">
                       <v-icon color="primary">mdi-rocket-launch</v-icon>
@@ -34,7 +34,7 @@
                     :rounded=true
                     class="text-center v-card_border"
                     height="140"
-                    width="150"
+                    width=100%
                   >
                     <v-card-title class="space-around-min">
                       <v-icon color="primary">mdi-coffee</v-icon>
@@ -51,7 +51,7 @@
                     :rounded=true
                     class="text-center v-card_border"
                     height="140"
-                    width="150"
+                    width=100%
                   >
                     <v-card-title class="space-around-min">
                       <v-icon color="primary">mdi-briefcase</v-icon>
@@ -68,7 +68,7 @@
                     :rounded=true
                     class="text-center v-card_border"
                     height="140"
-                    width="150"
+                    width=100%
                   >
                     <v-card-title class="space-around-min">
                       <v-icon color="primary">mdi-emoticon-tongue</v-icon>
