@@ -16,7 +16,7 @@
                       rounded="xl"
                       :elevation="isHovering ? 12 : 2"
                       :class="{ 'on-hover': isHovering }"
-                      class="align-center"
+                      class="align-center v-card-hover"
                       min-height="200"
                       min-width="400"
                       v-bind="props"
@@ -107,11 +107,11 @@ export default {
 <style scoped>
 @import '@/scss/global.css';
 
-.v-card {
+.v-card-hover {
     transition: opacity .4s ease-in-out;
     opacity: 1;
   }
-  .v-card:not(.on-hover) {
+  .v-card-hover:not(.on-hover) {
     opacity: 0.6;
   }
 

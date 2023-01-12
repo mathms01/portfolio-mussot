@@ -2,7 +2,7 @@
   <v-container>
     <v-parallax
       dark
-      src="http://drive.google.com/uc?export=view&id=1TkU7smZTUsuI9kciuOg4xkoCzYINFSG5"
+      :src="getImagePath('Leaf_banner.jpg')"
       class="v-parallax__image"
     >
     </v-parallax>
@@ -36,6 +36,7 @@ import CarrousselProjects from '@/components/CarrousselProjects.vue';
 import FreelancePresVue from '@/components/FreelancePres.vue';
 import PrestaPresVue from '@/components/PrestaPres.vue';
 import TechnoPresVue from '@/components/TechnoPres.vue';
+import shared from '@/utilities/shared';
 
 export default {
   name: 'App',
@@ -45,6 +46,11 @@ export default {
     FreelancePresVue,
     PrestaPresVue,
     TechnoPresVue
+  },
+  methods :{
+    getImagePath(img) {
+    return shared.getImagePath(img)
+    }
   }
 }
 </script>

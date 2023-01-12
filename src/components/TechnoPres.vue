@@ -5,7 +5,7 @@
                 <h3>CE QUE JE CONNAIS</h3>
                 <h2>Mon stack technique privilégié</h2>
             </v-card-title>
-            <v-card-text>
+            <!-- <v-card-text>
               <v-row class="space-around">
                 <v-divider></v-divider>
               </v-row>
@@ -61,43 +61,54 @@
                 ></v-btn> 
               </v-col>
             </v-row>
-            </v-card-text>
-        </v-card>
-        <v-card v-for="item in items" :key="item.title" :value="item.title" v-model="selectedItem">
-          <div v-if="item === selectedItem">
-          <v-row>
-            <v-col class="d-flex justify-center align-center" cols="2">
-              <v-icon size="x-large" class="outlined" color="primary">
-                {{item.icon}}
-              </v-icon>
-            </v-col>
-            <v-col cols="1" class="d-flex justify-center align-center">
-                <v-divider vertical inset></v-divider>
-            </v-col>
-            <v-col cols="9">
-              <v-card-title class="text-h6">
-                  <span>{{item.title}}</span>
-
-                  <v-spacer></v-spacer>
-
-                  <v-btn
-                    @click="close"
-                    icon="mdi-close-circle"
-                    color="primary"
-                    size="30"
-                    >
-                  </v-btn>
-            </v-card-title>
-            <v-card-subtitle class="text-left">
-              {{item.subtitle}}
-            </v-card-subtitle>
-            <v-card-text class="text-left">
-              {{item.description}}
-            </v-card-text>
-            </v-col>
-          </v-row>
-          </div>
-        </v-card>
+            </v-card-text> -->
+        <v-card-text>
+          <v-card v-for="(item, index) in items" :key="item.title" :value="item.title" class="space-around-min">
+            <v-row>
+              <v-col v-if="index % 2 === 0" cols="1">
+              </v-col>
+              <v-col class="d-flex justify-center align-center" cols="2">
+                <v-icon size="x-large" class="outlined" color="primary">
+                  {{item.icon}}
+                </v-icon>
+              </v-col>
+              <v-col cols="1" class="d-flex justify-center align-center">
+                  <v-divider vertical inset></v-divider>
+              </v-col>
+              <v-col :cols="index % 2 === 0 ? 8 : 9">
+                <v-card-title class="text-h6 text-left">
+                  <v-row>
+                    <v-col cols="2">
+                      <span>{{item.title}}</span>
+                    </v-col>
+                    <v-col cols="10">
+                      <v-spacer></v-spacer>
+                    </v-col>
+                    <!-- <v-col cols="1">
+                      <v-btn
+                      @click="close"
+                      icon="mdi-close-circle"
+                      color="primary"
+                      size="30"
+                      >
+                      </v-btn>
+                    </v-col> -->
+                  </v-row>
+              </v-card-title>
+              <v-card-subtitle class="text-left">
+                {{item.subtitle}}
+              </v-card-subtitle>
+              <v-card-text class="text-left">
+                {{item.description}}
+              </v-card-text>
+              </v-col>
+            </v-row>
+            <v-row>
+              <v-divider></v-divider>
+            </v-row>
+          </v-card>
+        </v-card-text>
+      </v-card>
     </v-container>
 </template>
 
@@ -145,20 +156,9 @@ export default {
           "description": "Déploiement et administration d'images et de conteneurs Docker",
           "icon": "mdi-docker"
         },
-      ],
-      selectedIndex: null
+      ]
     }
   },
-  computed: {
-    selectedItem() {
-      return this.items.find(item => item.title === this.selectedIndex);
-    },
-  },
-  methods:{
-    close(){
-      this.selectedIndex = null
-    }
-  }
 }
 </script>
 

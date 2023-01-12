@@ -7,7 +7,7 @@
           v-for="item in items" 
           :key=item.title
           cols="4">
-              <v-card >
+              <v-card width="100%">
                   <v-card-title>{{item.title}}</v-card-title>
                   <v-card-subtitle>{{item.description}}</v-card-subtitle>
                   <v-img v-bind:title="item.title" :src=getImagePath(item.image) href="{{item.link}}" aspect-ratio="1" cover>

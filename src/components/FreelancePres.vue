@@ -13,14 +13,14 @@
                 <v-divider></v-divider>
               </v-row>
               <v-row justify="space-around">
-                <v-col class="d-flex justify-center align-center">
+                <v-col>
                   <v-card
                     :rounded=true
-                    class="align-center"
-                    height="150"
+                    class="text-center v-card_border"
+                    height="140"
                     width="150"
                   >
-                    <v-card-title>
+                    <v-card-title class="space-around-min">
                       <v-icon color="primary">mdi-rocket-launch</v-icon>
                     </v-card-title>
                     <v-card-text>
@@ -29,14 +29,14 @@
                     </v-card-text>
                   </v-card>
                 </v-col>
-                <v-col class="d-flex justify-center align-center">
+                <v-col>
                   <v-card
                     :rounded=true
-                    class="align-center"
-                    height="150"
+                    class="text-center v-card_border"
+                    height="140"
                     width="150"
                   >
-                    <v-card-title>
+                    <v-card-title class="space-around-min">
                       <v-icon color="primary">mdi-coffee</v-icon>
                     </v-card-title>
 
@@ -46,14 +46,14 @@
                     </v-card-text>
                   </v-card>
                 </v-col>
-                <v-col class="d-flex justify-center align-center">
+                <v-col>
                   <v-card
                     :rounded=true
-                    class="align-center"
-                    height="150"
+                    class="text-center v-card_border"
+                    height="140"
                     width="150"
                   >
-                    <v-card-title>
+                    <v-card-title class="space-around-min">
                       <v-icon color="primary">mdi-briefcase</v-icon>
                     </v-card-title>
 
@@ -63,14 +63,14 @@
                     </v-card-text>
                   </v-card>
                 </v-col>
-                <v-col class="d-flex justify-center align-center">
+                <v-col>
                   <v-card
                     :rounded=true
-                    class="align-center"
-                    height="150"
+                    class="text-center v-card_border"
+                    height="140"
                     width="150"
                   >
-                    <v-card-title>
+                    <v-card-title class="space-around-min">
                       <v-icon color="primary">mdi-emoticon-tongue</v-icon>
                     </v-card-title>
 

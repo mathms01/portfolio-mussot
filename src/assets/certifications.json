@@ -1,8 +1,8 @@
 [
     {
     "title": "Aucun",
-    "image": "",
-    "description": "Certification Azure Devops par Microsoft",
+    "image": "Empty_circle.png",
+    "description": "Aucun",
     "link": "https://learn.microsoft.com/fr-fr/certifications/devops-engineer/"
     }
 ]

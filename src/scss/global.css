@@ -22,6 +22,10 @@ v-icon {
     width: 56px;
 }
 
+.v-card_border {
+    border: 1px solid violet;
+}
+
 v-btn {
     color:var(--v-primary-base)
 }

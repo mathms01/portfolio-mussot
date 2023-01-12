@@ -1,6 +1,6 @@
 <template>
     <div>
-    <v-container>
+    <v-container fluid grid-list-md>
       <v-row>
         <v-col
         class="d-flex child-flex"
