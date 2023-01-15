@@ -40,6 +40,8 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -54,5 +56,8 @@ export default {
 
 .title{
   margin-left: 30px;
+  font-family: Pacifico, Avenir, Arial, sans-serif;
+  color: violet;
+  text-shadow: 0 0 3px #ff00ea, 0 0 5px #460039;
 }
 </style>
