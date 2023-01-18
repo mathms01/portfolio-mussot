@@ -8,33 +8,37 @@ import Qualifications from '@/views/Qualifications/App.vue';
 
 const routes = [
     {
+        path: '/',
+        redirect: { name: 'Home' }
+    },
+    {
         name:'Home',
-        path: '/home',
+        path: '/portfolio-mussot/home',
         component: Home
     },
     {
         name:'Portfolio',
-        path: '/portfolio',
+        path: '/portfolio-mussot/portfolio',
         component: Portfolio
     },
     {
         name:'CV',
-        path: '/cv',
+        path: '/portfolio-mussot/cv',
         component: CV
     },
     {
         name:'Freelance',
-        path: '/freelance',
+        path: '/portfolio-mussot/freelance',
         component: Freelance
     },
     {
         name:'Qualifications',
-        path: '/qualifications',
+        path: '/portfolio-mussot/qualifications',
         component: Qualifications
     },
     {
         name:'About',
-        path: '/about',
+        path: '/portfolio-mussot/about',
         component: About
     },
 ];
