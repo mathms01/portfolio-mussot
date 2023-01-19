@@ -8,8 +8,12 @@ import Qualifications from '@/views/Qualifications/App.vue';
 
 const routes = [
     {
+        path: '/portfolio-mussot/',
+        redirect: '/portfolio-mussot/home'
+    },
+    {
         path: '/',
-        redirect: { name: 'Home' }
+        redirect: '/portfolio-mussot/home'
     },
     {
         name:'Home',
@@ -47,5 +51,7 @@ const router = createRouter({
     history:createWebHistory(),
     routes
 })
+
+router.replace("Home");
 
 export default router;
